@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fab Gadget Ltd.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <style>
+      /* Global Styles */
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 50px 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin: 20px 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+
+      /* Navigation Styles */
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Main Content */
+      main {
+        padding: 30px;
+        text-align: center;
+        background-color: #f4f4f4;
+        min-height: 60vh;
+      }
+
+      main h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      main p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto 20px;
+      }
+
+      /* Button Styles */
+      button {
+        padding: 12px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+
+      /* Dark Mode Styles */
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      body.dark-mode header {
+        background-color: #1f1f1f;
+      }
+
+      body.dark-mode nav {
+        background-color: #1f1f1f;
+      }
+
+      body.dark-mode nav ul li a {
+        color: #ddd;
+      }
+
+      body.dark-mode nav ul li a:hover {
+        color: #00bfff;
+      }
+
+      body.dark-mode main {
+        background-color: #2c2c2c;
+      }
+
+      body.dark-mode button {
+        background-color: #333333;
+      }
+
+      body.dark-mode button:hover {
+        background-color: #555555;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #007bff;
+      }
+
+      /* Social Media Links */
+      #social {
+        margin-bottom: 10px;
+      }
+
+      #social li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      /* Legal Links */
+      #legal {
+        margin-top: 10px;
+      }
+
+      #legal li {
+        display: inline;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="images/logo.png" alt="Fab Gadget Logo" />
+      <h1>Fab Gadget Ltd.</h1>
+      <h2>Delivering quality and innovative robotics to your home</h2>
+      <button id="dark-mode-toggle">Enable Dark Mode</button>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mower.html">Robot Mowers</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <h1>&lt;Home Page&gt;</h1>
+      <p>Welcome to Fab Gadget Ltd, your trusted destination for high-quality lawn mowers and lawn care equipment. Whether you're a homeowner looking to keep your yard pristine or a professional landscaper in need of reliable tools, we have everything you need to achieve a perfectly manicured lawn.</p>
+      <p>Our extensive selection of top-rated lawn mowers, along with expert advice and customer support, ensures you find the perfect match for your lawn care needs. Explore our range, and let us help you maintain the beautiful, green lawn you deserve!</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <ul id="social">
+        <li><a href="https://www.facebook.com">Like us on Facebook!</a></li>
+        <li><a href="https://www.instagram.com">Like us on Instagram!</a></li>
+        <li><a href="https://www.twitter.com">Like us on Twitter!</a></li>
+      </ul>
+      <ul id="legal">
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+      const body = document.body;
+
+      // Check if dark mode is enabled in localStorage
+      if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+        darkModeToggle.textContent = "Disable Dark Mode";
+      }
+
+      // Toggle Dark Mode functionality
+      darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          localStorage.setItem("dark-mode", "enabled");
+          darkModeToggle.textContent = "Disable Dark Mode";
+        } else {
+          localStorage.setItem("dark-mode", "disabled");
+          darkModeToggle.textContent = "Enable Dark Mode";
+        }
+      });
+    </script>
+  </body>
+</html>

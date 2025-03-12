@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fab Gadget Ltd.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <style>
+      /* Global Styles */
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* Header */
+      header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin: 10px 0;
+      }
+
+      header h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 0 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Main Content */
+      main {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #fff;
+        min-height: 60vh;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 1200px;
+      }
+
+      main h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #007bff;
+      }
+
+      main p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin: 0 auto 20px;
+        max-width: 800px;
+      }
+
+      /* Image Grid */
+      .image-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .image-gallery img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: #007bff;
+      }
+
+      /* Social Media Links */
+      #social {
+        margin-bottom: 20px;
+        list-style: none;
+        padding: 0;
+      }
+
+      #social li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      #social li a {
+        font-size: 1.2rem;
+      }
+
+      /* Legal Links */
+      #legal {
+        margin-top: 10px;
+        list-style: none;
+        padding: 0;
+      }
+
+      #legal li {
+        display: inline;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="images/logo.png" alt="Fab Gadget Logo" />
+      <h1>Fab Gadget Ltd.</h1>
+      <h2>Delivering quality and innovative robotics to your home</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mower.html">Robot Mowers</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+      <h1>&lt;Our Mowers&gt;</h1>
+      <p>Welcome to Fab Gadget Ltd, your one-stop shop for high-quality lawn mowers designed to meet every need! Whether you're a homeowner looking to maintain your garden, or a professional landscaper in search of durable equipment, we've got the perfect lawn mower for you.</p>
+      <p>Get ready to elevate your lawn care game with the best lawn mowers in the industry, only at Fab Gadget Ltd!</p>
+
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img src="images/lawn mower.webp" alt="Lawn Mower 1" />
+        <img src="images/lawn mower 2.jpg" alt="Lawn Mower 2" />
+        <img src="images/lawn mower 3.jpg" alt="Lawn Mower 3" />
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <ul id="social">
+        <li><a href="https://www.facebook.com">Like us on Facebook!</a></li>
+        <li><a href="https://www.instagram.com">Like us on Instagram!</a></li>
+        <li><a href="https://www.twitter.com">Like us on Twitter!</a></li>
+      </ul>
+      <ul id="legal">
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
